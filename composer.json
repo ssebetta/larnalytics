@@ -5,7 +5,9 @@
     "version": "1.0.0",
     "require": {
         "guzzlehttp/guzzle": "^7.8",
-        "jenssegers/agent": "^2.6",
+        "jenssegers/agent": "^2.6"
+    },
+    "require-dev": {
         "illuminate/support": "^8.0|^9.0|^10.0",
         "illuminate/database": "^8.0|^9.0|^10.0",
         "illuminate/http": "^8.0|^9.0|^10.0",
