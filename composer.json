@@ -2,6 +2,7 @@
     "name": "ssebetta/larnalytics",
     "description": "A simple web analytics tool for laravel projects",
     "type": "package",
+    "version": "1.0.0",
     "require": {
         "guzzlehttp/guzzle": "^7.8",
         "jenssegers/agent": "^2.6",
