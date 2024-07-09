@@ -22,7 +22,7 @@
     "extra": {
 	"laravel": {
             "providers": [
-                "SiteVisitAnalytics\\AnalyticsServiceProvider"
+                "Ssebetta\\Larnalytics\\Providers\\LarnalyticsServiceProvider"
             ]
         }
     },
