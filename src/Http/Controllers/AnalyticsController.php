@@ -10,13 +10,14 @@ class AnalyticsController extends BaseController
 {
     public function showPageViews()
     {
-        $pageViews = PageView::all();
-        return view('larnalytics::page_views', compact('pageViews'));
+        $pageViews = PageView::simplePaginate(15);
+        $totalPageViews = PageView::count();
+        return view('larnalytics::page_views', compact('pageViews', 'totalPageViews'));
     }
 
     public function showCustomEvents()
     {
-        $customEvents = CustomEvent::all();
+        $customEvents = CustomEvent::simplePaginate(15);
         return view('larnalytics::custom_events', compact('customEvents'));
     }
 }
