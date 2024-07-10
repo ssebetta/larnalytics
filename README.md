@@ -35,7 +35,7 @@ Larnalytics is a simple site analytics package for Laravel applications.
 
 ## Usage
 
-Larnalytics will automatically track page views and store the data in the `larnalytics_page_views` table. You can log custom events using the `Analytics` helper:
+Larnalytics will automatically track page views and store the data in the `page_views` table. You can log custom events using the `Analytics` helper:
 
 ```php
 use Ssebetta\Larnalytics\Helpers\Analytics;
