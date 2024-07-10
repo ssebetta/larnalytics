@@ -32,6 +32,8 @@ Larnalytics is a simple site analytics package for Laravel applications.
         ],
     ];
     ```
+## Extra
+Run `php artisan route:cache` to access the `analytics/page-view` route
 
 ## Usage
 
