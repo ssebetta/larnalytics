@@ -7,7 +7,7 @@ class CreatePageViewsTable extends Migration
 {
     public function up()
     {
-        Schema::create('larnalytics_page_views', function (Blueprint $table) {
+        Schema::create('page_views', function (Blueprint $table) {
             $table->id();
             $table->string('user_id')->nullable();
             $table->string('page_url');
@@ -22,6 +22,6 @@ class CreatePageViewsTable extends Migration
 
     public function down()
     {
-        Schema::dropIfExists('larnalytics_page_views');
+        Schema::dropIfExists('page_views');
     }
 }
