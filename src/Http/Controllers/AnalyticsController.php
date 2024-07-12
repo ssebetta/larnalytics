@@ -10,7 +10,7 @@ class AnalyticsController extends BaseController
 {
     public function showPageViews()
     {
-        $pageViews = PageView::simplePaginate(15);
+        $pageViews = PageView::orderByDesc('id')->simplePaginate(15);
         $totalPageViews = PageView::count();
         return view('larnalytics::page_views', compact('pageViews', 'totalPageViews'));
     }
