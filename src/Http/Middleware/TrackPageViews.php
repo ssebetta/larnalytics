@@ -15,7 +15,11 @@ class TrackPageViews
     {
         $response = $next($request);
         $client = new Client();
-        $publicIp = $client->get('https://api.ipify.org')->getBody()->getContents();
+
+        // $request->ip() may not work on localhost but works well on live.
+        // For testing properly on localhost, uncomment line 21 and comment out line 22
+        // $publicIp = $client->get('https://api.ipify.org')->getBody()->getContents();
+        $publicIp = $request->ip();
         $location = $this->getLocationFromIp($publicIp);
         $agent = new Agent();
         $agent->setUserAgent($request->userAgent());
